@@ -1,0 +1,80 @@
+.coh-button-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 60px;
+    height: 36px;
+    padding: 0 20px;
+    border-radius: 4px;
+    font-family: $coh-ui-font-stack--sans;
+    font-size: 14px;
+    font-weight: bold;
+    transition: $coh-transition--background;
+    
+    &--default {
+        background: $coh-grey-1;
+        border: 1px solid $coh-grey-4;
+        color: $coh-grey-11;
+    
+        &:hover {
+            background: $coh-white;
+        }
+        
+        svg {
+            fill: $coh-grey-11;
+        }
+    }
+    
+    &--primary {
+        background: linear-gradient(to bottom, #0a7bc1, #0a6eb4);
+        color: $coh-white;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #0a6fb4, #0a65aa);
+            opacity: 0;
+            pointer-events: none;
+            transition: $coh-transition--opacity;
+        }
+    
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    
+        svg {
+            fill: $coh-white;
+        }
+    }
+    
+    &--secondary {
+        background: $coh-grey-11;
+        color: $coh-white;
+        
+        &:hover {
+            background: $coh-grey-8;
+        }
+        
+        svg {
+            fill: $coh-white;
+        }
+    }
+    
+    &__span {
+        display: flex;
+        
+        &--label {
+            margin-right: 10px;
+            z-index: 1;
+        }
+    }
+    
+    .coh-icon {
+        z-index: 1;
+    }
+}

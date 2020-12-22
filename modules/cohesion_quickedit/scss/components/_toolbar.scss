@@ -1,0 +1,35 @@
+.toolbar-bar {
+    .toolbar-icon-edit {
+        &.is-active {
+            border-right: 1px solid $coh-blue-5;
+        }
+    }
+    
+    .coh-edit-mode {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        
+        &__ul {
+            display: flex;
+            height: 100%;
+        }
+        
+        &__li {
+            position: relative;
+            border-left: 1px solid $coh-blue-5;
+            
+            & > .coh-button-new {
+                height: 100%;
+                
+                &--breakpoint-selector {
+                    .coh-icon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

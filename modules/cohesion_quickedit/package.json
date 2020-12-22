@@ -1,0 +1,17 @@
+{
+    "name": "cohesion-quickedit",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "node node_modules/gulp/bin/gulp.js",
+        "watch": "node node_modules/gulp/bin/gulp.js watch"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.0.2",
+        "gulp-strip-css-comments": "^2.0.0"
+    },
+    "dependencies": {
+        "npm": "^5.7.1"
+    }
+}

@@ -1,0 +1,76 @@
+// --- FONTS --- //
+$coh-ui-font-stack--sans: "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Lucida Sans", sans-serif;
+$coh-ui-font-stack--mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// --- COLOURS --- //
+// Generic
+$coh-white: #FFF;
+$coh-grey-1: #F7F7F7;
+$coh-grey-2: #EEE;
+$coh-grey-3: #DDD;
+$coh-grey-4: #BBB;
+$coh-grey-5: #999;
+$coh-grey-6: #777;
+$coh-grey-7: #555;
+$coh-grey-8: #3D3D3D;
+$coh-grey-9: #333;
+$coh-grey-10: #2D2D2D;
+$coh-grey-11: #212121;
+$coh-grey-12: #1A1A1A;
+$coh-grey-13: #0D0D0D;
+$coh-black: #000;
+$coh-blue-1: #E1EFF7;
+$coh-blue-2: #70C3E9;
+$coh-blue-3: #26A3DD;
+$coh-blue-4: #0E68A7;
+$coh-blue-5: #0B5386;
+$coh-blue-6: #09426B;
+$coh-green-1: #EEF8D5;
+$coh-green-2: #B2EA63;
+$coh-green-3: #70B812;
+$coh-green-4: #539E00;
+$coh-yellow-1: #FFF6D3;
+$coh-yellow-2: #FFE396;
+$coh-yellow-3: #FFCC4E;
+$coh-yellow-4: #FFB400;
+$coh-yellow-5: #E58A00;
+$coh-red-1: #FFE9E2;
+$coh-red-2: #FF8F87;
+$coh-red-3: #F24B48;
+$coh-red-4: #CE2727;
+
+// Component/helper categories
+$coh-category-1: #FEC231;
+$coh-category-2: #F47A20;
+$coh-category-3: #CE2727;
+$coh-category-4: #26A3DD;
+$coh-category-5: #0E68A7;
+$coh-category-6: #09426B;
+$coh-category-7: #DD87F0;
+$coh-category-8: #9928AF;
+$coh-category-9: #661078;
+$coh-category-10: #66C8CA;
+$coh-category-11: #3BA3A5;
+$coh-category-12: #216372;
+$coh-category-13: #B2EA63;
+$coh-category-14: #70B812;
+$coh-category-15: #478500;
+
+// --- TRANSITIONS --- //
+$coh-transition--background: background 200ms ease-in-out;
+$coh-transition--box-shadow: box-shadow 200ms ease-in-out;
+$coh-transition--border: border 200ms ease-in-out;
+$coh-transition--color: color 200ms ease-in-out;
+$coh-transition--fill: fill 200ms ease-in-out;
+$coh-transition--height: height 200ms ease-in-out;
+$coh-transition--max-width: max-width 200ms ease-in-out;
+$coh-transition--opacity: opacity 200ms ease-in-out;
+$coh-transition--transform: transform 200ms ease-in-out;
+
+// --- OTHER VARIABLES --- //
+$coh-sidebar-browser-width: 320px;
+$coh-field-height: 32px;
+$coh-focus-box-shadow: 0 0 0 3px $coh-yellow-3;
+$coh-focus-box-shadow--error: 0 0 0 3px $coh-red-2;
+$coh-placeholder-stripes--light: linear-gradient(135deg, $coh-grey-3 12.50%, transparent 12.50%, transparent 50%, $coh-grey-3 50%, $coh-grey-3 62.50%, transparent 62.50%, transparent 100%) center / 5.66px 5.66px;
+$coh-placeholder-stripes--dark: linear-gradient(135deg, $coh-grey-7 12.50%, transparent 12.50%, transparent 50%, $coh-grey-7 50%, $coh-grey-7 62.50%, transparent 62.50%, transparent 100%) center / 5.66px 5.66px;

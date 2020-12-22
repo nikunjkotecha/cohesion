@@ -1,0 +1,7 @@
+name: Cohesion quickedit
+type: module
+description: 'Drop in replacement for the core quickedit module with additional front end editing capabilities for Cohesion.'
+core: 8.x
+package: cohesion
+dependencies:
+  - cohesion

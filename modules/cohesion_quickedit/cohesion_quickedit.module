@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements page_attachments().
+ */
+function cohesion_quickedit_page_attachments(array &$attachments) {
+  $is_admin = \Drupal::service('cohesion.utils')->isAdminTheme();
+
+  // Attach the reset.css and other css.
+  if (!$is_admin) {
+    $attachments['#attached']['library'][] = 'cohesion_quickedit/quickedit';
+    $attachments['#attached']['library'][] = 'cohesion_quickedit/svgxuse';
+  }
+}

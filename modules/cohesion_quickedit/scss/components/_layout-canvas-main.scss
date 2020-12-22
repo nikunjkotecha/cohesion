@@ -1,0 +1,10 @@
+.coh-layout-canvas-main {
+    position: relative;
+    margin: 10px;
+}
+
+.dx-contextual-region {
+    &-mask {
+        outline: 1px solid $coh-red-4; // will be dynamic based on component category
+    }
+}

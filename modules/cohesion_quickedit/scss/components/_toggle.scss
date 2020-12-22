@@ -1,0 +1,93 @@
+.coh-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 60px;
+    height: 100%;
+    padding: 0 20px;
+    font-weight: bold;
+    color: $coh-white;
+    background: $coh-red-4;
+    transition: $coh-transition--background;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #0a6fb4, #0a65aa);
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+        transition: $coh-transition--opacity;
+    }
+    
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+    
+    &__span--state {
+        display: flex;
+        width: 40px;
+        height: 22px;
+        background: $coh-black;
+        border: 2px solid $coh-black;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    &__span {
+        &--label {
+            margin-right: 10px;
+        }
+        
+        &--on {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+            flex-shrink: 0;
+            background: $coh-black;
+            padding-right: 5px;
+            box-shadow: inset -5px 0 $coh-white;
+            transform: translateX(-100%);
+            transition: $coh-transition--transform;
+            
+            svg {
+                fill: $coh-green-3;
+            }
+        }
+        
+        &--off {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+            flex-shrink: 0;
+            background: $coh-black;
+            padding-left: 5px;
+            box-shadow: inset 5px 0 $coh-white;
+            transform: translateX(-100%);
+            transition: $coh-transition--transform;
+    
+            svg {
+                fill: $coh-red-4;
+            }
+        }
+    }
+    
+    &.coh-is-pressed {
+        background: $coh-green-3;
+        
+        .coh-toggle__span--on {
+            transform: translateX(0);
+        }
+        
+        .coh-toggle__span--off {
+            transform: translateX(0);
+        }
+    }
+}

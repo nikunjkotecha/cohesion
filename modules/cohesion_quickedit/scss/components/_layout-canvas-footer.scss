@@ -1,0 +1,23 @@
+.coh-layout-canvas-footer {
+    &__ul {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: $coh-grey-2;
+    }
+    
+    &__li {
+        list-style: none;
+        margin: 0 0 0 10px;
+        
+        &--add {
+            margin: 0 auto 0 0;
+        }
+    }
+    
+    .coh-button-new--options {
+        span {
+            margin-right: 5px;
+        }
+    }
+}

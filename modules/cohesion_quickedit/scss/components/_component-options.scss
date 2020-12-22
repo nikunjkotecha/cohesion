@@ -1,0 +1,30 @@
+.coh-component-options {
+    display: flex;
+    margin: 1px;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    
+    &__li {
+        position: relative;
+        list-style: none;
+        border: 1px solid $coh-grey-8;
+        margin: -1px;
+        
+        &--move {
+            &:before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                bottom: -1px;
+                left: -1px;
+                width: 8px;
+                background: $coh-red-4; // will be dynamic based on component category
+                z-index: 1;
+            }
+        }
+    
+        .coh-button-new {
+            border-radius: 0 !important;
+        }
+    }
+}

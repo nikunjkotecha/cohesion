@@ -1,0 +1,58 @@
+.coh-breakpoint-selector {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin: 1px 0;
+    
+    &.coh-is-active {
+        display: block;
+    }
+    
+    &__li {
+        margin: -1px;
+        
+        &.coh-is-pressed {
+            .coh-button-new {
+                background: $coh-blue-4 !important;
+                border-color: $coh-blue-4;
+        
+                .coh-icon {
+                    fill: $coh-white !important;
+                }
+            }
+        }
+    }
+    
+    .coh-button-new {
+        background: $coh-white;
+        border: 1px solid $coh-grey-3;
+        border-radius: 0;
+        transition: $coh-transition--background, $coh-transition--border;
+    
+        .coh-icon {
+            fill: $coh-grey-5;
+            width: 22px;
+            height: 22px;
+            transition: $coh-transition--fill;
+        }
+        
+        &:hover {
+            border-top-color: $coh-blue-4;
+            border-bottom-color: $coh-blue-4;
+            background: $coh-blue-1;
+            z-index: 1;
+    
+            .coh-icon {
+                fill: $coh-blue-4;
+            }
+        }
+    }
+}
+
+.coh-edit-mode {
+    .dialog-off-canvas-main-canvas {
+        margin-right: auto;
+        margin-left: auto;
+        transition: $coh-transition--max-width;
+    }
+}

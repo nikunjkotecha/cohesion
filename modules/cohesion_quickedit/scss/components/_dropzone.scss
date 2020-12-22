@@ -1,0 +1,59 @@
+.coh-edit-mode {
+    .coh-component-dropzone {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        transition: $coh-transition--background;
+        
+        &--empty {
+            background: $coh-grey-2;
+            outline: 1px solid $coh-grey-4;
+        }
+        
+        &.coh-is-selected {
+            background: $coh-yellow-1 !important;
+            outline-color: $coh-yellow-4 !important;
+        }
+        
+        .coh-button-new--add {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 0 10px;
+            font: bold 12px $coh-ui-font-stack--sans;
+            color: $coh-grey-6;
+            text-transform: uppercase;
+        }
+        
+        .coh-icon--plus {
+            fill: $coh-blue-4;
+        }
+        
+        &--animated {
+            .coh-button-new--add {
+                height: 0;
+                overflow: hidden;
+                transition: $coh-transition--height;
+            }
+        }
+    }
+    
+    .coh-component:hover {
+        .coh-component-dropzone {
+            background: $coh-grey-2;
+            outline: 1px solid $coh-grey-4;
+            
+            &--animated {
+                .coh-button-new--add {
+                    height: 36px;
+                }
+            }
+        }
+    }
+    
+    // Ensure dropzone inside row for columns is 100% height
+    .coh-row {
+        height: 100%;
+    }
+}

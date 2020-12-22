@@ -1,0 +1,11 @@
+.coh-edit-mode {
+    .dx-contextual-region-mask {
+        display: block;
+        opacity: 0 !important;
+        transition: $coh-transition--opacity;
+        
+        &.dx-show {
+            opacity: 1 !important;
+        }
+    }
+}
